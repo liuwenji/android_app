@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="TOP"
+        android:textColor="@android:color/white"
+        android:textSize="40dp" />
+
+    <com.example.demo.CustomView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="bottom"
+            android:textColor="@android:color/white"
+            android:textSize="40dp" />
+    </com.example.demo.CustomView>
+
+    <com.example.demo.ReviewVideoScrollView
+        android:id="@+id/review_video_frame_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <!--
+             <com.example.demo.ReviewVideoFrameView
+            android:id="@+id/review_video_frame_view"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" />
+        -->
+    </com.example.demo.ReviewVideoScrollView>
+
+</LinearLayout>
